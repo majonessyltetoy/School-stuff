@@ -1,0 +1,30 @@
+Oppgave 1.6
+
+  a) sann
+  b) usann
+  c) sann
+  d) sann
+  e) usann
+  f) sann
+  g) sann
+  h) usann
+  i) sann
+  
+
+Oppgave 1.7
+
+  a) {5, 7, 9}
+  b) {0, 2, 4}
+  c) {5, 7, 9}
+  d) {6, 8}
+  e) Ø
+  f) {0, 2, 4, 6, 8}
+  
+  
+Oppgave 1.8
+
+  Fra sannsynlighet vet vi at for å finne alle kombinasjonen
+  av et gitt sett kan vi bruke summen av binominalkoeffisienten
+  til n og p, der n er antall elementer med p = 0 som startverdien.
+  Dette gir at {1, 2, 3, 4} er 16 delmengder, mens {1, 2, 3, 4, 5}
+  er 32 delmengder.

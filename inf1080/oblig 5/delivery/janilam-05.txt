@@ -1,0 +1,40 @@
+Innlevering 5
+Jan Inge Lamo
+
+
+8.12
+
+a) Vi kan si at S = {x | x < 100} og T = {x | x er oddetall}.
+   Eller vi kan si at S er den universiele mengden og T er også den universiele
+   mengeden.
+   
+b) For at S \ T skal være uendelig, må S være uendelig; T kan være både endelig
+   og uendelig. F.eks S = {x | x er et naturlig tall} og T = {1, 2, 3},
+   T kan også være uendelig som T = {x | x er partall}.
+   
+c) S må være en endelig rekke. Vi kan si at:
+   S = {1, 2, 3, ..., 11} og T = {1, 2, 3}
+                       eller T = {x | x er deleling med 3}
+
+
+9.2
+
+Tillukningene til relasjonen R
+
+a) refleksive tillukningen:
+   {<2,3>, <3,2>, <1,a>, <1,1>, <2,2>, <3,3>, <a,a>, <b,b>}
+
+b) symmetriske tillukningen:
+   {<2,3>, <3,2>, <1,a>, <a,1>}
+
+c) transitive tillukningen:
+   {<2,3>, <3,2>, <1,a>, <2,2>, <3,3>}
+
+
+9.11
+
+a) Den minste mengden S slik at Λ ∈ S, og hvis x ∈ S, så xa ∈ S eller xb ∈ S
+
+b) Den minste mengden S slik at Λ ∈ S, og hvis x ∈ S, så axbx ∈ S
+
+c) Den minste mengden S slik at Λ ∈ S, og hvis x ∈ S, så (ab)x ∈ S

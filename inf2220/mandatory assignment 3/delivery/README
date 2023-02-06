@@ -1,0 +1,94 @@
+compile:
+$ javac Oblig3.java BMH.java
+
+execute:
+$ java Oblig3 needle haystack
+
+
+The main method is in Oblig3.java. It's a little messy because it print
+differently depending on wether the needle has a newline. If the needle does not
+have a newline, then it executes the algorithm on every line in the file (this
+is horribly inefficient because of the preprocessing, but as a benefit the user
+can see which line and where on the line that needle matched), if the needle
+does contain newline then it searches through the whole text in one swoop.
+
+The implementation is heavily influenced by the code that was presented in
+lecture 10.
+
+UPDATE (22 November)
+The algorithm searches for the first and last wildcard, and set the smaller of
+the two as default bad-shift value.
+
+
+###########
+## EXAMPLES
+###########
+
+$ java Oblig3 n1 h1
+
+Found match in line 3
+index 21: elis
+index 376: elis
+Found all matches!
+
+Found match in line 4
+index 283: elis
+Found all matches!
+
+####
+
+$ java Oblig3 n2 h2
+
+Found match in line 1
+index 0: Call me Ish
+index 188:  and see th
+index 271:  and regula
+index 692:  and method
+index 1000:  all men in
+index 1070: same feelin
+Found all matches!
+
+Found match in line 2
+index 95: ral reefs--
+index 148:  and left, 
+index 351:  at the cro
+Found all matches!
+
+Found match in line 3
+index 465: ward peep. 
+index 494: landsmen; o
+index 512: days pent u
+Found all matches!
+
+####
+
+$ java Oblig3 n3 h3
+Found match at character index 116:
+");
+test
+
+Found match at character index 177:
+");
+yolo
+
+Found all matches!
+
+####
+
+$ java Oblig3 n4 h4
+
+Found match in line 1
+index 147: iora e
+Found all matches!
+
+####
+
+$ java Oblig3 n5 h5
+
+Found match in line 1
+index 28: ANPANMAN
+index 36: ANPANMAN
+index 49: ANANTNAN
+Found all matches!
+
+

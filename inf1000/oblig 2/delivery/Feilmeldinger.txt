@@ -1,0 +1,23 @@
+a) Forskjellen mellom kjorefeil og kompilerings feil er hvis feilen
+   oppstaar naar man prover aa lage selve programmet eller om man
+   har programmet man det krasjer naar man kjorer det.
+   Kompilerings feil er som oftest syntax feil som gjor at data-
+   maskinen ikke klarer aa lage programmet. Mens Kjorefeil, eller
+   runtime errors er ofte logiske feil, som aa dele paa null eller
+   aapne en fil som ikke eksisterer.
+
+b) For aa lose feilmeldinger i Java starter vi overst med aa rette
+   feilene. Den forste erroren oppstaar i linje 1, det er ogsaa en
+   liten pil paa starten av ordet java ikke forstod. Vi ser at det
+   staar "Class", men egentlig skal det staa "class". Java er 
+   case sensetive, naar vi retter den, forstaar java at den andre
+   erroren ikke er reel. Java hikket paa at vi lagde en main met-
+   oden for classen, men naa forstod den at vi skulle lage en class.
+   
+   Forovrig er det enda en feil, paa slutten av print funksjonen
+   skal det vaere en ";" som er blitt etterlatt.
+
+   Og ^ det var siste feil, java peker paa hvilken linje som er
+   feil, og hva den forventet, Vi retter det enkelt.
+
+

@@ -1,0 +1,8 @@
+a) Innkapsling er nytting for aa forhindre "side effects", altsaa for ikke aa
+   forandre paa variabel verdier med uhell
+
+b) Grensesnittet til en klasse er metodene som er definert i klassen.
+   Implementasjonen er utfyllingen av metodene i klassen.
+
+c) Instansmetoder er grensesnittet objektet tilbyr. Metoder som skal brukes i
+   en objektorientert sammenheng kan ikke vaere static.

@@ -1,0 +1,17 @@
+Finding a cycle in the graph has complexity O(2n), where n is tasks/node. This is
+because the algorithm traverses all the nodes in the graph once, and has a loop
+that checkes if the node has been traversed.
+
+Finding earliest start and latest start time has O(n^2) complexity. The high 
+complexity arise from that some tasks may be iterated multiple times. Though it's
+unlikely and will probably be computed relativly quick.
+
+Simulating the project has complexity O(t*n) where t is the time units the project
+takes to complete and n is tasks in the project. The implementation redeem the
+complexity, it's only O(t*n) if the project has no dependencies and all task uses
+equal amount of time (which is highly unlikely).
+
+Printing the list of tasks which depend on every task has complexity O(n*(n+e)),
+where n is tasks in the project and e is dependencies in the project. The (n+e)
+come from the fact that dependencies can only iterate tasks and dependencies once.
+The n* come from the fact that we check every task in the project.

@@ -1,0 +1,30 @@
+Innlevering 8
+navn: Jan Inge Lamo
+dato: 14.10.2015
+
+
+14.6
+
+a) (Ba Λ Fa)
+
+b) ∃x(Bx → Fx)
+
+c) ¬∃x(Fx → Bx)
+
+d) ∃x(Kax Λ Fx)
+
+e) ∀x(Fx → Kbx)
+
+f) ∀x(Kcx → Bx)
+
+g) ∀x∃y(Kxy Λ Fy)
+
+h) ∀x∃y∃z(Kxy Λ Kyz Λ Fz)
+
+i) Ingen er hverken biologer eller filosofer
+
+j) Aristoteles kjenner noen som ikke er biolog
+
+k) Alle filosofer kjenner hverandre
+
+l) Noen kjenner alle filosofene

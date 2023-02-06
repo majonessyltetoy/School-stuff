@@ -1,0 +1,2 @@
+This delivery has been corrected, and the grade is: Passed
+Du har levert en flott besvarelse som oppfører seg akkurat slik som oppgaveteksten etterspør. Alle kommandoene fungerer riktig, og oppgaven er riktig implementer i forhold til UML-diagrammet. Koden din er oversiktelig og fin med flotte kommentarer. Jeg har ingenting å utsette på det du har levert. Lykke til på eksamen!

@@ -1,0 +1,4 @@
+class Kolonne extends Structure
+{
+
+}

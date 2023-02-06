@@ -1,0 +1,36 @@
+Innlevering 11
+navn: Jan Inge Lamo
+dato: 05.11.15
+
+
+19.5
+
+a) Vi finner først ut at 2^5 = 32, altsaa er det 32 delmengder av mengden
+   M. Mengden {3, 4, 5} har 2^3 = 8 delmengder, vi tar 32-8 = 24
+   delmengder uten 3, 4, eller 5. Altså er det 24 delmengder som inneholder
+   enten 1 eller 2
+
+b) Det er 5^5 = 3125 funksjoner fra M til M. Vi finner de bijektive funksjonene
+   med å si at hvert element fra M kan bare til et element i M, altså injektiv,
+   og det er 5!=120 surjektive funksjoner fra M til M. Siden det er en en-til-en
+   korrespondanse er antallet bijektive funksjoner 120.
+   
+
+20.10
+
+a) <G, ●> blir ikke en gruppe når a ● b = a + b og G er de naturlige tallene
+   fordi ingen av elementene har en invers(bortsett fra 0).
+
+b) <G, ●> er en gruppe når a ● b = a + b og G er alle heltallene.
+
+c) <G, ●> blir ikke en gruppe når a ● b = a * b og G er alle heltallene fordi
+   ingen av elementene har en invers(bortsett fra 1).
+
+d) <G, ●> blir ikke en gruppe når a ● b = a + b og G er de reelle tallene fordi
+   ingen av elementene har en invers(bortsett fra 0).
+
+e) <G, ●> blir en gruppe; * er en assosiativ operasjon, identites elementet er
+   lik 1, og alle elementene i G har en invers.
+
+f) <G, ●> er ikke en gruppe fordi / (brøk) ikke er en assosiativ operasjon.
+

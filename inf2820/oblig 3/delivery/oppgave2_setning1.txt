@@ -1,0 +1,123 @@
+The grammar matches six analysis to the sentence.
+Below are the individual trees.
+
+
+                                          S                                                   
+        __________________________________|___________________________                         
+       NP                                                             |                       
+   ____|_____                                                         |                        
+  |          RP                                                       |                       
+  |     _____|_______________                                         |                        
+  |    |                     VP                                       |                       
+  |    |                 ____|_________________                       |                        
+  |    |                VP                |    |                      VP                      
+  |    |      __________|____             |    |                   ___|______________          
+  |    |     |               CP           |    |                  VP                 |        
+  |    |     |       ________|____        |    |       ___________|___               |         
+  |    |     |      |             S       |    |      |               NP             PP       
+  |    |     |      |         ____|___    |    |      |      _________|____      ____|____     
+  NP   |     |      |        NP       VP  |    VP     |     NP        |    NP   |         NP  
+  |    |     |      |        |        |   |    |      |     |         |    |    |         |    
+Nprop  R    VinC    C      Nprop     Vin  CC  Vin     Vt   Ndet       CC  Ndet PREP      Ndet 
+  |    |     |      |        |        |   |    |      |     |         |    |    |         |    
+ Ola  som fortalte  at      Kari     sov  og smilte likte barnet      og huset ved      vannet
+
+                                          S                                               
+        __________________________________|_______________________                         
+       NP                                                         |                       
+   ____|_____                                                     |                        
+  |          RP                                                   |                       
+  |     _____|_______________                                     |                        
+  |    |                     VP                                   |                       
+  |    |                 ____|_________________                   |                        
+  |    |                VP                |    |                  VP                      
+  |    |      __________|____             |    |       ___________|____                    
+  |    |     |               CP           |    |      |                NP                 
+  |    |     |       ________|____        |    |      |            ____|_________          
+  |    |     |      |             S       |    |      |           NP             PP       
+  |    |     |      |         ____|___    |    |      |      _____|____      ____|____     
+  NP   |     |      |        NP       VP  |    VP     |     NP    |    NP   |         NP  
+  |    |     |      |        |        |   |    |      |     |     |    |    |         |    
+Nprop  R    VinC    C      Nprop     Vin  CC  Vin     Vt   Ndet   CC  Ndet PREP      Ndet 
+  |    |     |      |        |        |   |    |      |     |     |    |    |         |    
+ Ola  som fortalte  at      Kari     sov  og smilte likte barnet  og huset ved      vannet
+
+                                          S                                               
+        __________________________________|_______________________                         
+       NP                                                         |                       
+   ____|_____                                                     |                        
+  |          RP                                                   |                       
+  |     _____|_______________                                     |                        
+  |    |                     VP                                   VP                      
+  |    |                 ____|_________________        ___________|____                    
+  |    |                VP                |    |      |                NP                 
+  |    |      __________|____             |    |      |      __________|____               
+  |    |     |               CP           |    |      |     |     |         NP            
+  |    |     |       ________|____        |    |      |     |     |     ____|____          
+  |    |     |      |             S       |    |      |     |     |    |         PP       
+  |    |     |      |         ____|___    |    |      |     |     |    |     ____|____     
+  NP   |     |      |        NP       VP  |    VP     |     NP    |    NP   |         NP  
+  |    |     |      |        |        |   |    |      |     |     |    |    |         |    
+Nprop  R    VinC    C      Nprop     Vin  CC  Vin     Vt   Ndet   CC  Ndet PREP      Ndet 
+  |    |     |      |        |        |   |    |      |     |     |    |    |         |    
+ Ola  som fortalte  at      Kari     sov  og smilte likte barnet  og huset ved      vannet
+
+                                      S                                                   
+        ______________________________|___________________________                         
+       NP                                                         |                       
+   ____|_____                                                     |                        
+  |          RP                                                   |                       
+  |     _____|___________                                         |                        
+  |    |                 VP                                       |                       
+  |    |      ___________|____                                    |                        
+  |    |     |                CP                                  VP                      
+  |    |     |       _________|___                             ___|______________          
+  |    |     |      |             S                           VP                 |        
+  |    |     |      |     ________|___             ___________|___               |         
+  |    |     |      |    |            VP          |               NP             PP       
+  |    |     |      |    |     _______|____       |      _________|____      ____|____     
+  NP   |     |      |    NP   VP      |    VP     |     NP        |    NP   |         NP  
+  |    |     |      |    |    |       |    |      |     |         |    |    |         |    
+Nprop  R    VinC    C  Nprop Vin      CC  Vin     Vt   Ndet       CC  Ndet PREP      Ndet 
+  |    |     |      |    |    |       |    |      |     |         |    |    |         |    
+ Ola  som fortalte  at  Kari sov      og smilte likte barnet      og huset ved      vannet
+
+                                      S                                               
+        ______________________________|_______________________                         
+       NP                                                     |                       
+   ____|_____                                                 |                        
+  |          RP                                               |                       
+  |     _____|___________                                     |                        
+  |    |                 VP                                   |                       
+  |    |      ___________|____                                |                        
+  |    |     |                CP                              VP                      
+  |    |     |       _________|___                 ___________|____                    
+  |    |     |      |             S               |                NP                 
+  |    |     |      |     ________|___            |            ____|_________          
+  |    |     |      |    |            VP          |           NP             PP       
+  |    |     |      |    |     _______|____       |      _____|____      ____|____     
+  NP   |     |      |    NP   VP      |    VP     |     NP    |    NP   |         NP  
+  |    |     |      |    |    |       |    |      |     |     |    |    |         |    
+Nprop  R    VinC    C  Nprop Vin      CC  Vin     Vt   Ndet   CC  Ndet PREP      Ndet 
+  |    |     |      |    |    |       |    |      |     |     |    |    |         |    
+ Ola  som fortalte  at  Kari sov      og smilte likte barnet  og huset ved      vannet
+
+                                      S                                               
+        ______________________________|_______________________                         
+       NP                                                     |                       
+   ____|_____                                                 |                        
+  |          RP                                               |                       
+  |     _____|___________                                     |                        
+  |    |                 VP                                   VP                      
+  |    |      ___________|____                     ___________|____                    
+  |    |     |                CP                  |                NP                 
+  |    |     |       _________|___                |      __________|____               
+  |    |     |      |             S               |     |     |         NP            
+  |    |     |      |     ________|___            |     |     |     ____|____          
+  |    |     |      |    |            VP          |     |     |    |         PP       
+  |    |     |      |    |     _______|____       |     |     |    |     ____|____     
+  NP   |     |      |    NP   VP      |    VP     |     NP    |    NP   |         NP  
+  |    |     |      |    |    |       |    |      |     |     |    |    |         |    
+Nprop  R    VinC    C  Nprop Vin      CC  Vin     Vt   Ndet   CC  Ndet PREP      Ndet 
+  |    |     |      |    |    |       |    |      |     |     |    |    |         |    
+ Ola  som fortalte  at  Kari sov      og smilte likte barnet  og huset ved      vannet

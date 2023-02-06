@@ -1,0 +1,502 @@
+file: output.txt
+comment: hash symbol seperator
+
+
+################################################################################
+
+
+$ java Oblig2 buildhouse1.txt 0
+Time:  0	Starting: 5
+	   Current staff: 2
+
+Time:  4	Finished: 5
+		Starting: 1
+		Starting: 6
+	   Current staff: 4
+
+Time:  6	Finished: 6
+	   Current staff: 2
+
+Time:  8	Finished: 1
+		Starting: 2
+	   Current staff: 4
+
+Time:  14	Finished: 2
+		Starting: 3
+		Starting: 4
+		Starting: 7
+	   Current staff: 7
+
+Time:  15	Finished: 3
+		Finished: 4
+	   Current staff: 2
+
+Time:  18	Finished: 7
+		Starting: 8
+	   Current staff: 4
+
+Time:  22	Finished: 8
+	
+**** Shortest possible project execution is 22 ****
+
+Press Enter to print task list. Or press CTRL-c to quit
+
+
+
+Task id: 1
+Name: Build-walls
+Time required: 4
+Earliest start: 4
+Latest start: 4
+Slack: 0
+Dependent tasks: 5 
+
+Task id: 2
+Name: Build-roofs
+Time required: 6
+Earliest start: 8
+Latest start: 8
+Slack: 0
+Dependent tasks: 1 5 
+
+Task id: 3
+Name: Put-on-wallpapers
+Time required: 1
+Earliest start: 14
+Latest start: 17
+Slack: 3
+Dependent tasks: 1 5 2 
+
+Task id: 4
+Name: Put-on-tiles
+Time required: 1
+Earliest start: 14
+Latest start: 21
+Slack: 7
+Dependent tasks: 2 1 5 
+
+Task id: 5
+Name: Build-foundation
+Time required: 4
+Earliest start: 0
+Latest start: 0
+Slack: 0
+Dependent tasks: 
+
+Task id: 6
+Name: Make-floor
+Time required: 2
+Earliest start: 4
+Latest start: 12
+Slack: 8
+Dependent tasks: 5 
+
+Task id: 7
+Name: Put-carpet-floor
+Time required: 4
+Earliest start: 14
+Latest start: 14
+Slack: 0
+Dependent tasks: 6 5 2 1 
+
+Task id: 8
+Name: Move-in
+Time required: 4
+Earliest start: 18
+Latest start: 18
+Slack: 0
+Dependent tasks: 3 1 5 2 7 6 
+
+
+
+################################################################################
+
+
+$ java Oblig2 buildhouse2.txt 0
+Found loop:
+1 Build-walls
+2 Build-roofs
+3 Put-on-wallpapers
+6 Make-floor
+1 Build-walls
+exiting
+
+
+
+################################################################################
+
+
+$ java Oblig2 buildrail.txt 0
+Time:  0	Starting: 9
+	   Current staff: 10
+
+Time:  3	Finished: 9
+		Starting: 10
+		Starting: 11
+		Starting: 12
+		Starting: 14
+		Starting: 16
+		Starting: 17
+	   Current staff: 56
+
+Time:  4	Finished: 11
+		Starting: 18
+		Starting: 19
+		Starting: 20
+	   Current staff: 64
+
+Time:  5	Finished: 10
+		Starting: 2
+	   Current staff: 70
+
+Time:  12	Finished: 2
+	   Current staff: 60
+
+Time:  16	Finished: 20
+		Starting: 23
+	   Current staff: 61
+
+Time:  28	Finished: 14
+		Starting: 15
+	   Current staff: 61
+
+Time:  29	Finished: 19
+	   Current staff: 57
+
+Time:  33	Finished: 12
+		Starting: 13
+	   Current staff: 57
+
+Time:  38	Finished: 16
+	   Current staff: 45
+
+Time:  44	Finished: 18
+		Starting: 21
+	   Current staff: 46
+
+Time:  46	Finished: 23
+		Starting: 26
+	   Current staff: 48
+
+Time:  48	Finished: 15
+		Finished: 17
+		Starting: 22
+	   Current staff: 29
+
+Time:  51	Finished: 13
+		Starting: 8
+	   Current staff: 24
+
+Time:  59	Finished: 21
+		Starting: 24
+	   Current staff: 26
+
+Time:  63	Finished: 8
+		Starting: 3
+	   Current staff: 29
+
+Time:  64	Finished: 3
+		Finished: 22
+		Starting: 25
+	   Current staff: 21
+
+Time:  66	Finished: 26
+	   Current staff: 14
+
+Time:  119	Finished: 24
+		Starting: 4
+	   Current staff: 13
+
+Time:  124	Finished: 25
+		Starting: 5
+		Starting: 27
+	   Current staff: 22
+
+Time:  134	Finished: 4
+	   Current staff: 16
+
+Time:  136	Finished: 5
+	   Current staff: 10
+
+Time:  149	Finished: 27
+		Starting: 28
+		Starting: 29
+	   Current staff: 20
+
+Time:  179	Finished: 28
+	   Current staff: 10
+
+Time:  186	Finished: 29
+		Starting: 1
+		Starting: 6
+		Starting: 7
+		Starting: 30
+	   Current staff: 29
+
+Time:  204	Finished: 7
+	   Current staff: 23
+
+Time:  206	Finished: 1
+		Finished: 30
+		Starting: 31
+	   Current staff: 13
+
+Time:  213	Finished: 6
+	   Current staff: 7
+
+Time:  218	Finished: 31
+	
+**** Shortest possible project execution is 218 ****
+
+Press Enter to print task list. Or press CTRL-c to quit
+
+
+
+Task id: 1
+Name: Install-pavement
+Time required: 20
+Earliest start: 186
+Latest start: 198
+Slack: 12
+Dependent tasks: 28 27 24 21 16 9 18 11 25 22 17 19 29 
+
+Task id: 2
+Name: Install-railing
+Time required: 7
+Earliest start: 5
+Latest start: 211
+Slack: 206
+Dependent tasks: 10 9 
+
+Task id: 3
+Name: Install-ticketmachine
+Time required: 1
+Earliest start: 63
+Latest start: 217
+Slack: 154
+Dependent tasks: 8 13 12 9 15 14 
+
+Task id: 4
+Name: Paint-tower-1-with-arch
+Time required: 15
+Earliest start: 119
+Latest start: 203
+Slack: 84
+Dependent tasks: 24 21 16 9 18 11 
+
+Task id: 5
+Name: Paint-tower-2
+Time required: 12
+Earliest start: 124
+Latest start: 206
+Slack: 82
+Dependent tasks: 25 22 17 9 19 11 
+
+Task id: 6
+Name: Paint-trusses
+Time required: 27
+Earliest start: 186
+Latest start: 191
+Slack: 5
+Dependent tasks: 28 27 24 21 16 9 18 11 25 22 17 19 29 
+
+Task id: 7
+Name: Paint-cables-and-rods
+Time required: 18
+Earliest start: 186
+Latest start: 200
+Slack: 14
+Dependent tasks: 28 27 24 21 16 9 18 11 25 22 17 19 29 
+
+Task id: 8
+Name: Put-lane-tunnel-and-intersection
+Time required: 12
+Earliest start: 51
+Latest start: 51
+Slack: 0
+Dependent tasks: 13 12 9 15 14 
+
+Task id: 9
+Name: Setup-barrack
+Time required: 3
+Earliest start: 0
+Latest start: 0
+Slack: 0
+Dependent tasks: 
+
+Task id: 10
+Name: Prepare-storage
+Time required: 2
+Earliest start: 3
+Latest start: 3
+Slack: 0
+Dependent tasks: 9 
+
+Task id: 11
+Name: Rig-ramspace-reinforcing
+Time required: 1
+Earliest start: 3
+Latest start: 3
+Slack: 0
+Dependent tasks: 9 
+
+Task id: 12
+Name: Build-tunnel
+Time required: 30
+Earliest start: 3
+Latest start: 3
+Slack: 0
+Dependent tasks: 9 
+
+Task id: 13
+Name: Clean-tunnel
+Time required: 18
+Earliest start: 33
+Latest start: 33
+Slack: 0
+Dependent tasks: 12 9 
+
+Task id: 14
+Name: Build-intersection
+Time required: 25
+Earliest start: 3
+Latest start: 3
+Slack: 0
+Dependent tasks: 9 
+
+Task id: 15
+Name: Clean-intersection
+Time required: 20
+Earliest start: 28
+Latest start: 31
+Slack: 3
+Dependent tasks: 14 9 
+
+Task id: 16
+Name: Build-towerfoundation-1
+Time required: 35
+Earliest start: 3
+Latest start: 9
+Slack: 6
+Dependent tasks: 9 
+
+Task id: 17
+Name: Build-towerfoundation-2
+Time required: 45
+Earliest start: 3
+Latest start: 3
+Slack: 0
+Dependent tasks: 9 
+
+Task id: 18
+Name: Make-armouring-tower-1
+Time required: 40
+Earliest start: 4
+Latest start: 4
+Slack: 0
+Dependent tasks: 11 9 
+
+Task id: 19
+Name: Make-armouring-tower-2
+Time required: 25
+Earliest start: 4
+Latest start: 23
+Slack: 19
+Dependent tasks: 11 9 
+
+Task id: 20
+Name: Make-armouring-arch
+Time required: 12
+Earliest start: 4
+Latest start: 4
+Slack: 0
+Dependent tasks: 11 9 
+
+Task id: 21
+Name: Encase-and-armour-tower-1
+Time required: 15
+Earliest start: 44
+Latest start: 44
+Slack: 0
+Dependent tasks: 16 9 18 11 
+
+Task id: 22
+Name: Encase-and-armour-tower-2
+Time required: 16
+Earliest start: 48
+Latest start: 48
+Slack: 0
+Dependent tasks: 17 9 19 11 
+
+Task id: 23
+Name: Encase-and-armour-arch
+Time required: 30
+Earliest start: 16
+Latest start: 16
+Slack: 0
+Dependent tasks: 20 11 9 
+
+Task id: 24
+Name: Cast-tower-1
+Time required: 60
+Earliest start: 59
+Latest start: 59
+Slack: 0
+Dependent tasks: 21 16 9 18 11 
+
+Task id: 25
+Name: Cast-tower-2
+Time required: 60
+Earliest start: 64
+Latest start: 64
+Slack: 0
+Dependent tasks: 22 17 9 19 11 
+
+Task id: 26
+Name: Cast-arch
+Time required: 20
+Earliest start: 46
+Latest start: 186
+Slack: 140
+Dependent tasks: 23 20 11 9 
+
+Task id: 27
+Name: Stretch-two-maincables
+Time required: 25
+Earliest start: 124
+Latest start: 124
+Slack: 0
+Dependent tasks: 24 21 16 9 18 11 25 22 17 19 
+
+Task id: 28
+Name: Build-truss-1-with-rods
+Time required: 30
+Earliest start: 149
+Latest start: 156
+Slack: 7
+Dependent tasks: 27 24 21 16 9 18 11 25 22 17 19 
+
+Task id: 29
+Name: Build-truss-2-with-rods
+Time required: 37
+Earliest start: 149
+Latest start: 149
+Slack: 0
+Dependent tasks: 27 24 21 16 9 18 11 25 22 17 19 
+
+Task id: 30
+Name: Cast-lane-on-truss
+Time required: 20
+Earliest start: 186
+Latest start: 186
+Slack: 0
+Dependent tasks: 28 27 24 21 16 9 18 11 25 22 17 19 29 
+
+Task id: 31
+Name: Polish-lane-on-arch
+Time required: 12
+Earliest start: 206
+Latest start: 206
+Slack: 0
+Dependent tasks: 30 28 27 24 21 16 9 18 11 25 22 17 19 29 26 23 20 8 13 12 15 14 
+

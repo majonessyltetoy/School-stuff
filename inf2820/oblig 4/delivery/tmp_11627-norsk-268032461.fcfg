@@ -1,0 +1,133 @@
+S -> NP[PRO='subj', AGR=?x] VP[AGR=?x]
+S -> NP[PRO='subj', AGR=?x] VP[AGR=?x] CC S
+
+NP[PRO=?x] -> PN[PRO=?x]
+NP[AGR=?x] -> N[SC='bestemt', AGR=?x]
+NP[AGR=?x] -> N[SC='proper', AGR=?x]
+NP[AGR=?x] -> ADJ[AGR=[NUM='pl']] N[SC='proper', AGR=?x]
+NP[AGR=?x] -> DET[SC=?y, AGR=?x] N[SC=?y, AGR=?x]
+NP[AGR=?x] -> DET[SC=bestemt, AGR=?x] ADJ[AGR=[NUM='pl']] N[SC='bestemt', AGR=?x]
+NP[AGR=?x] -> DET[SC='ubestemt', AGR=?x] ADJ[AGR=?x] N[SC='ubestemt', AGR=?x]
+
+VP[AGR=?x] -> V[SC='intrans']
+VP[AGR=?x] -> V[SC='trans'] NP[PRO='obj']
+VP[AGR=?x] -> V[SC='ditrans'] NP[PRO='obj'] NP[PRO='obj']
+VP[AGR=?x] -> V[SC='scomp'] CP
+VP[AGR=?x] -> V[SC='ctrans'] NP[PRO='obj'] CP
+VP[AGR=?x] -> 'er' ADJ[AGR=?x]
+
+
+CP -> C S
+PP -> PREP NP[PRO='obj']
+NP -> NP[PRO='obj'] PP | NP[PRO='obj'] CC NP[PRO='obj']
+VP -> VP PP | VP CC VP
+
+PREP  -> 'i' | 'ved' | 'bak' | 'til'
+
+C  -> 'at'
+CC -> 'og'
+
+
+ADJ[AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'stort' | 'snilt' | 'pent'
+ADJ[AGR=[GEN='m', PERS='3rd', NUM='sg']] -> 'stor' | 'snill' | 'pen'
+ADJ[AGR=[GEN='f', PERS='3rd', NUM='sg']] -> 'stor' | 'snill' | 'pen'
+ADJ[AGR=[PERS='3rd', NUM='pl']] -> 'store' | 'snille' | 'pene'
+
+
+V[SC='intrans'] -> 'sov' | 'smilte' | 'spiste' | 'sover' | 'smiler' | 'spiser'
+V[SC='trans']   -> 'solgte' | 'spiste' | 'likte' | 'så' | 'liker' | 'spiser'
+V[SC='ditrans'] -> 'ga' | 'overrakte'
+V[SC='scomp']   -> 'fortalte' | 'sa'
+V[SC='ctrans']  -> 'fortalte'
+
+
+PN[PRO='subj'] -> 'jeg' | 'du' | 'han' | 'hun' | 'den' | 'vi' | 'de'
+PN[PRO='obj'] -> 'meg' | 'deg' | 'ham' | 'henne' | 'det' | 'oss' | 'dere' | 'dem'
+
+
+DET[SC='bestemt',AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'det' | 'dette'
+DET[SC='ubestemt',AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'et' | 'ethvert'
+
+DET[SC='bestemt',AGR=[GEN='m', PERS='3rd', NUM='sg']] -> 'den' | 'denne'
+DET[SC='ubestemt',AGR=[GEN='m', PERS='3rd', NUM='sg']] -> 'en' | 'enhver'
+
+DET[SC='bestemt',AGR=[GEN='f', PERS='3rd', NUM='sg']] -> 'den' | 'denne'
+DET[SC='ubestemt',AGR=[GEN='f', PERS='3rd', NUM='sg']] -> 'ei' | 'enhver'
+
+DET[SC='bestemt',AGR=[GEN='n', PERS='3rd', NUM='pl']]  -> 'alle' | 'de' | 'disse'
+DET[SC='ubestemt',AGR=[GEN='n', PERS='3rd', NUM='pl']]  -> 'alle' | 'mange' | 'noen' | 'ingen'
+DET[SC='bestemt',AGR=[GEN='m', PERS='3rd', NUM='pl']]  -> 'alle' | 'de' | 'disse'
+DET[SC='ubestemt',AGR=[GEN='m', PERS='3rd', NUM='pl']]  -> 'alle' | 'mange' | 'noen' | 'ingen'
+DET[SC='bestemt',AGR=[GEN='f', PERS='3rd', NUM='pl']]  -> 'alle' | 'de' | 'disse'
+DET[SC='ubestemt',AGR=[GEN='f', PERS='3rd', NUM='pl']]  -> 'alle' | 'mange' | 'noen' | 'ingen'
+
+
+N[SC='bestemt', AGR=[PERS='3rd', NUM='pl']] -> 'alle' | 'mange' | 'noen' | 'ingen'
+
+N[SC='proper', AGR=[PERS='3rd', NUM='sg']] -> 'Ola' | 'Kari'
+
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']]  -> 'barnet'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'barn'
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']]  -> 'barna'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']] -> 'barn'
+
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']]  -> 'dyret'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'dyr'
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']]  -> 'dyret'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']] -> 'dyr'
+
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']]  -> 'eplet'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'eple'
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']]  -> 'eplene'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']] -> 'epler'
+
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']]  -> 'huset'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'hus'
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']]  -> 'husene'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='pl']] -> 'hus'
+
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']]  -> 'vannet'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'vann'
+N[SC='bestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']]  -> 'vanna'
+N[SC='ubestemt', AGR=[GEN='n', PERS='3rd', NUM='sg']] -> 'vann'
+
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']]  -> 'bilen'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']] -> 'bil'
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']]  -> 'bilene'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']] -> 'biler'
+
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']]  -> 'hunden'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']] -> 'hund'
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']]  -> 'hundene'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']] -> 'hunder'
+
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']]  -> 'gutten'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']] -> 'gutt'
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']]  -> 'guttene'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']] -> 'gutter'
+
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']]  -> 'kontrakten'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='sg']] -> 'kontrakt'
+N[SC='bestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']]  -> 'kontraktene'
+N[SC='ubestemt', AGR=[GEN='m', PERS='3rd', NUM='pl']] -> 'kontrakter'
+
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']]  -> 'jenta'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']] -> 'jente'
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']]  -> 'jentene'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']] -> 'jenter'
+
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']]  -> 'hytta'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']] -> 'hytte'
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']]  -> 'hyttene'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']] -> 'hytter'
+
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']]  -> 'anda'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']] -> 'and'
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']]  -> 'endene'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']] -> 'ender'
+
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']]  -> 'gåsa'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='sg']] -> 'gås'
+N[SC='bestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']]  -> 'gjesene'
+N[SC='ubestemt', AGR=[GEN='f', PERS='3rd', NUM='pl']] -> 'gjes'
+

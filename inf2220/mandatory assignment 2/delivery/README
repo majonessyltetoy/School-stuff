@@ -1,0 +1,16 @@
+compile:
+$ javac Oblig2.java
+
+execute:
+$ java Oblig2 /path/to/project 0
+
+
+Oblig2 contains the main-method
+
+Limited manpower is not implemented.
+
+
+UPDATE 30.10
+Loop printing now only print strongly connected nodes.
+Fixed dependent task list (typo "outEdges" instead of "inEdges").
+Updated output.txt

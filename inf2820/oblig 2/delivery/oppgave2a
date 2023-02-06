@@ -1,0 +1,5 @@
+The Snowball stemmer for Norwegian stems the example words like I thought they
+would except for 'splitting', which I thought would be 'splitt'.
+
+Other words it struggles with are words that gains an additional consonant when
+adding a suffix; for instance 'drømmer' and 'kommer'.

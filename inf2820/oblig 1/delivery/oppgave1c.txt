@@ -1,0 +1,2 @@
+Expounding on the image from 'oppgave 1a' we see that all the strings are
+accepted except for "bbc"(iv), "aaaa"(v), and "abab"(ix).

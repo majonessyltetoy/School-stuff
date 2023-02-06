@@ -1,0 +1,4 @@
+class Boks extends Structure
+{
+
+}

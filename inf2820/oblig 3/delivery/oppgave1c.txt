@@ -1,0 +1,21 @@
+Below you see a table with labels 'multipied' and 'sr_parse_modified'.
+Those columns signify how long (in seconds) it to the sr_parse_modified function
+to compute the sentence "Kari likte dyret"+x*" bak huset" where x is replaced by
+the number in the multiplied column.
+
+
+  multiplied  |  sr_parse_modified
+--------------+-----------------------
+      2       |       0.06
+--------------+-----------------------
+      3       |       0.13
+--------------+-----------------------
+      4       |       0.40
+--------------+-----------------------
+      5       |       1.50
+--------------+-----------------------
+      6       |       6.20
+--------------+-----------------------
+      7       |       26
+--------------+-----------------------
+      8       |       108

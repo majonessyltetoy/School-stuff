@@ -1,0 +1,18 @@
+Oppgave 2.4
+
+a) Jeg liker Nasse Nøff og er tøff
+
+b) Hvis jeg liker å lese og er tøff, så liker jeg Nasse Nøff
+
+c) Det er ikke slik at hvis jeg liker Nasse Nøff, så er jeg ikke tøff
+
+d) (¬(N ∧ T) ∧ L)
+
+e) (L → (T  ∧ N))
+
+
+Oppgave 3.3
+
+n) Usann
+
+o) Usann

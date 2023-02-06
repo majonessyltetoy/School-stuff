@@ -1,0 +1,8 @@
+>>> print lex_to_lemma('x30027')
+kaster
+
+>>> print lex_to_lemma('x30049')
+kasusbøyning
+
+>>> print lex_to_lemma('x30061')
+katalogisere

@@ -1,0 +1,9 @@
+wf.morf_feat is the morphology features of the word; verb and present tense.
+
+wf.syn_feat is the syntactic features of the word:
+V = verb
+pres = present tense
+indic = indicative mood
+active = subject does something
+main_ditrans = ditransitive is the main transition form
+!intrans!trans = alternate transition forms intransitive and transitive

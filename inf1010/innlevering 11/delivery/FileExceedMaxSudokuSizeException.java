@@ -1,0 +1,4 @@
+class FileExceedMaxSudokuSizeException extends Exception
+{
+
+}

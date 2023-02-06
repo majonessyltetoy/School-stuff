@@ -1,0 +1,54 @@
+Innlevering 12
+navn: Jan Inge Lamo
+dato: 12.11.15
+
+****
+Note
+****
+* Jeg fant ut hvordan man regnet ut antall kanter i en komplett
+* graf med N noder, ved å tenke at nodene alltid hadde grad N-1
+* siden de er forbinnet med alle andre noder. Ut fra det tenkte
+* jeg at N velg N-1 var da antall kanter, men selvfølgelig var
+* det galt siden (N velg N-1) = (N velg 1) => N.
+* Videre tok jeg en pragmatisk sving og testet ut N velg N-2 som
+* var riktig. Det er flere forklaringer online hvordan N(N-1)/2,
+* men jeg leverer svaret jeg fant på egenhånd. Denne noten bare
+* forklarer at jeg ikke tok plagiat av en annen student.
+****
+
+
+21.6
+
+For å finne komplementet til grafen G med nodene n og kantene m,
+finner vi først antalle kanter i universet av grafen. For å finne
+antall kanter i universet av grafen, tar vi antall noder velg 2:
+U = binomial(n, 2).
+
+Nå som vi har antall kanter i universet av grafen trenger vi bare
+å subtrahere antall kanter i universet av grafen fra antall linjer
+det faktisk er i grafen: U - m = antall kanter i komplementet til G.
+
+
+22.10
+
+a) Det er M + N noder i en komplett todelt graf
+
+b) Det er M * N kanter i en komplett todelt graf
+
+c) For å gjøre forklaringen enklere kaller vi de to topp nodene A og B,
+   og de tre nederste C, D, og E.
+   
+   A og B har 3 valg, mens C, D, og E har bare 2. Altså hvis vi starter
+   i enten C, D, eller E må man gå til enten A eller B, så må vi gå ned
+   igjen og velge mellom de to resterende, så gå opp til den eneste igjen
+   over, for deretter å enten gå til start noden eller den urørte noden,
+   hvis man velger start noden kommer man ikke lengre, hvis man velger
+   den urørte kommer man bare til den andre noden vi gikk til å starte
+   med og ikke videre derfra.
+   
+   Men hvis vi starter fra enten A eller B får vi uansett hvor vi går en
+   Eulervei, det er ikke en krets fordi vi må gå gjennom start noden før
+   vi er ferdig.
+
+
+

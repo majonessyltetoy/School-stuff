@@ -1,0 +1,35 @@
+4.8
+
+d) Formelen er tautologisk, altså er den alltid sann.
+   Det er på grunn av →, ∧ og ¬ modifisererne.
+   Hver gang ((P → Q) ∧ ¬Q) er sann er også ¬P på slutten
+   sann. Da er den alltid sann.
+   
+e) Denne formelen er hverken tautologisk eller kontradiksjon.
+   Vi kan enkelt teste det med å gi P, Q og R verdien 1 og
+   se om formelen er sann eller usann, også gi variablene
+   verdien 0 og se om det gir det samme som når de hadde verdien
+   1. I Dette tilfellet var formelen usann når alle variablene
+   hadde verdien 1 og sann når de hadde verdien 0.
+   
+f) Den siste formelen er en kontradiksjon, den er alltid usann.
+   Vi ser dette enkelt fordi (¬(P ∨ Q) ∧ P) kan omskrives som
+   ((¬P ∧ ¬Q) ∧ P). Siden (¬P ∧ P) aldri kan bli sann er
+   formelen en kontradiksjon.
+   
+   
+5.5
+
+a) Hvis (P → Q) og (Q → R) så må (P → R) også være sann. Det
+   er fordi variablene Q ikke kan være sann hvis ikke R også
+   er det i formelen (Q → R), og hvis ikke Q kan være sann
+   kan ikke P være sann i formelen (P → Q). Altså kan ikke P
+   være sann mens R er usann. Derfor er (P → R) sann under 
+   omstendighetene som er gitt.
+   
+c) Vi finner den verdi som gjør (P → R) usann, det er når P er
+   sann og R er usann. For at (Q → R) skal være sann må Q være
+   usann siden R også er det. For at (P → Q) skal være sann
+   må P være usann siden Q er usann. Men P kan ikke være både
+   sann og usann! Derfor er (P → R) sann når (P → Q) og (Q → R)
+   også er sanne.

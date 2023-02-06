@@ -1,0 +1,98 @@
+dyret i huset ved vannet sov
+
+(S
+  (NP
+    (Ndet dyret)
+    (PP
+      (PREP i)
+      (NP (Ndet huset))
+      (PP (PREP ved) (NP (Ndet vannet)))))
+  (VP (Vintran sov)))
+(S
+  (NP
+    (Ndet dyret)
+    (PP
+      (PREP i)
+      (NP (Ndet huset) (PP (PREP ved) (NP (Ndet vannet))))))
+  (VP (Vintran sov)))
+
+
+Kari sov i huset ved vannet
+
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vintran sov)
+    (PP
+      (PREP i)
+      (NP (Ndet huset))
+      (PP (PREP ved) (NP (Ndet vannet))))))
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vintran sov)
+    (PP
+      (PREP i)
+      (NP (Ndet huset) (PP (PREP ved) (NP (Ndet vannet)))))))
+
+
+Kari likte huset ved vannet
+
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vtran likte)
+    (NP (Ndet huset))
+    (PP (PREP ved) (NP (Ndet vannet)))))
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vtran likte)
+    (NP (Ndet huset) (PP (PREP ved) (NP (Ndet vannet))))))
+
+
+Kari likte dyret i huset ved vannet
+
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vtran likte)
+    (NP (Ndet dyret) (PP (PREP i) (NP (Ndet huset))))
+    (PP (PREP ved) (NP (Ndet vannet)))))
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vtran likte)
+    (NP (Ndet dyret))
+    (PP
+      (PREP i)
+      (NP (Ndet huset))
+      (PP (PREP ved) (NP (Ndet vannet))))))
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vtran likte)
+    (NP (Ndet dyret))
+    (PP
+      (PREP i)
+      (NP (Ndet huset) (PP (PREP ved) (NP (Ndet vannet)))))))
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vtran likte)
+    (NP
+      (Ndet dyret)
+      (PP
+        (PREP i)
+        (NP (Ndet huset))
+        (PP (PREP ved) (NP (Ndet vannet)))))))
+(S
+  (NP (Nprop Kari))
+  (VP
+    (Vtran likte)
+    (NP
+      (Ndet dyret)
+      (PP
+        (PREP i)
+        (NP (Ndet huset) (PP (PREP ved) (NP (Ndet vannet))))))))
+

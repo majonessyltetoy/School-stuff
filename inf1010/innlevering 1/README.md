@@ -1,0 +1,2 @@
+This delivery has been corrected, and the grade is: 6/6 (passed)
+Veldig bra, men du kunne gjerne ha gjort litt mer ut av tegninga--vi rettere og gruppelærere står ved vårt når vi sier at strukturtegninger er praktiske å ha, selv om det som du sier nok er lettere å lese strukturtilstanden direkte fra koden i et såpass enkelt system som her.

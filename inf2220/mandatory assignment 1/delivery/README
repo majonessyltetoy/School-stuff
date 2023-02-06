@@ -1,0 +1,19 @@
+compile:
+javac Node.java Tree.java UI.java
+
+execute:
+java UI dictionary.txt
+
+
+UI.java contains the main method
+
+
+As you can see the program relies heavly on ArrayList, which is really not
+efficient. There is a half-assed attempt to reduce lookups in the spell checking
+by not looking up already the same word twice per spell check.
+
+There is a menu and sleep delays to increase interactivity.
+
+
+
+Everything should work.

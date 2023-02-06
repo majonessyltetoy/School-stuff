@@ -1,0 +1,16 @@
+sr_parse_modified() timing with different grammars.
+
+command:
+sentence = "Kari likte dyret"+6*" bak huset"
+timing("""sr_parse_modified(G,sent.split())""")
+
+where G is replaced by the grammar in the table
+
+
+  grammar  |  sr_parse_modified
+-----------+-------------------
+    pp     |    6.229         
+-----------+-------------------
+    my     |    6.726         
+-----------+-------------------
+   cnf     |    18.07

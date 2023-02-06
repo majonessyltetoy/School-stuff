@@ -1,0 +1,24 @@
+Assumption: Job length is always greater than zero.
+
+Quitting the client does not quit the server.
+
+When reaching EOF when reading the 'job type' the server will send
+'kill-children' signal to client, but stay alive. (incase job is a stream)
+
+When reaching EOF elsewise the client will throw an error and both the client
+and server will exit.
+
+The server/client communication has a lot of handholding. When one byte is sent
+the other part sends comfirmation that execution continues, or that an error
+was caught.
+
+The client uses sleep() a couple of places to allow the children to print.
+
+The mechanism for allowing only one client is quite simple. It closes the port
+after a client has connected, and reopen it when they disconnect.
+
+
+POSSIBLE IMPROVEMENTS:
+When user interput with SIGINT there is a small memory leak that is caused by
+scanf(). It's bleeding because it was expecting input, but the singal handler
+closes STDIN. The amount is negligible. Scanf should stop being such a bitch.

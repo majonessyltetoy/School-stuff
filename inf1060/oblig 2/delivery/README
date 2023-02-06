@@ -1,0 +1,11 @@
+Build:
+$ make
+
+Execute:
+$ ./ruterdrift /path/to/file.dat
+
+
+The user interaction is menu based, with numbers as input. When changing flags
+enter 'y' or 'n'.
+
+ctrl-C catching and flexible arrays is not implemented.

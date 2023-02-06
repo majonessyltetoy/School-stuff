@@ -1,0 +1,28 @@
+>>> analyze('kaster')
+kaste	morf V,pres	V_pres_indic_active_main_ditrans!intrans!trans
+kaste	morf N,pl,indef	N_m_pl_indef
+kaster	morf N,sg,indef	N_m_sg_indef
+
+>>> analyze('kastet')
+kast	morf N,sg	N_n_sg_def
+kasta	morf Adj,pos,indef,sg,part	Adj_mfn_pos_indef_sg
+kaste	morf V	V_pastpart_indic_passive_main_dummysubj!intrans!trans
+kaste	morf V	V_pastpart_indic_active_main_ditrans!intrans!trans
+kaste	morf V,pret	V_pret_indic_active_main_ditrans!intrans!trans
+
+>>> analyze('fisker')
+fisk	morf N,pl,indef	N_m_pl_indef
+fiske	morf V,pres	V_pres_indic_active_main_intrans!trans
+fisker	morf N,sg,indef	N_m_sg_indef
+
+>>> analyze('øyer')
+øy	morf N,pl,indef	N_f_pl_indef
+øye	morf V,pres	V_pres_indic_active_main_trans
+øye	morf N,pl,indef	N_n_pl_inde
+
+>>> analyze('foreslo')
+foreslå	morf V,pret	V_pret_indic_active_main_ditrans!scomp!trans
+
+>>> analyze('gås')
+gå	morf V	V_infpres_indic_passive_main_acomp!dummysubj!intrans
+gås	morf N,sg,indef	N_f_sg_indef

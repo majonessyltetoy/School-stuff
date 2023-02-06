@@ -1,0 +1,40 @@
+┌┤ᛝ├──[oblig1]
+└> java UI dictionary.txt
+
+Choose one of the following:
+[s]earch for word in dictionary
+[r]emove word from dictionary
+[i]nsert word
+[q]uit
+> s
+
+
+search for q to quit
+
+Enter word to search for
+> achiev
+It's not in the dictionary
+Found 3 suggestions in 3ms with 338 lookups.
+[achive, achier, achieve]
+
+Enter word to search for
+> achiese
+It's not in the dictionary
+Found 3 suggestions in 1ms with 390 lookups.
+[achieve, achiest, achinese]
+
+Enter word to search for
+> achievee
+It's not in the dictionary
+Found 5 suggestions in 0ms with 440 lookups.
+[achieved, achiever, achieves, achieve, achieve]
+
+Enter word to search for
+> ahcieve
+It's not in the dictionary
+Found 1 suggestions in 0ms with 390 lookups.
+[achieve]
+
+Enter word to search for
+> 
+

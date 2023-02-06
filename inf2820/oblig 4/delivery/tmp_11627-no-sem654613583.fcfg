@@ -1,0 +1,31 @@
+% start S
+
+S[SEM=<?npsem(?vpsem)>] -> NP[SEM=?npsem] VP[SEM=?vpsem]
+S[SEM=<?ccsem(?s1sem,?s2sem)>] -> S[SEM=?s1sem] CC[SEM=?ccsem] S[SEM=?s2sem]
+NP[SEM=<\X.X(?npsem)>] -> PN[SEM=?npsem]
+NP[SEM=<?dsem(?nsem)>] -> Det[SEM=?dsem] Nom[SEM=?nsem]
+NP[SEM=<?dsem(?apsem)>] -> Det[SEM=?dsem] AP[SEM=?apsem]
+VP[SEM=?vpsem] -> IV[SEM=?vpsem]
+VP[SEM=<\s.?npsem(\o.?tvsem(s,o))>] -> TV[SEM=?tvsem] NP[SEM=?npsem]
+VP[SEM=<\s.?ccsem(?vp1(s),?vp2(s))>] -> VP[SEM=?vp1] CC[SEM=?ccsem] VP[SEM=?vp2]
+Nom[SEM=?nsem] -> N[SEM=?nsem]
+AP[SEM=<\x.(?asem(x) & ?nsem(x))>] -> ADJ[SEM=?asem] Nom[SEM=?nsem]
+AP[SEM=<\x.(?asem(x) & ?apsem(x))>] -> ADJ[SEM=?asem] AP[SEM=?apsem]
+
+PN[SEM=<ola>] -> 'Ola'
+PN[SEM=<kari>] -> 'Kari'
+IV[SEM=<sov>] -> 'sov'
+IV[SEM=<smilte>] -> 'smilte'
+TV[SEM=<likte>] -> 'likte'
+TV[SEM=<beundret>] -> 'beundret'
+Det[SEM=<\P Q.exists x.(P(x) & Q(x))>] -> 'et'
+Det[SEM=<\P Q.all x.(P(x) -> Q(x))>] -> 'ethvert'
+N[SEM=<hus>] -> 'hus'
+N[SEM=<barn>] -> 'barn'
+N[SEM=<dyr>] -> 'dyr'
+ADJ[SEM=<lite>] -> 'lite'
+ADJ[SEM=<stort>] -> 'stort'
+ADJ[SEM=<pent>] -> 'pent'
+CC[SEM=<\X Y.(X & Y)>] -> 'og'
+CC[SEM=<\X Y.(X | Y)>] -> 'eller'
+

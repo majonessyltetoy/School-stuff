@@ -1,0 +1,30 @@
+START:
+0
+
+FINAL:
+3, 4, 7
+6
+
+EDGES:
+0  TENS     1
+0 'ten'     2
+0  ONES     2
+0  TENS     2
+0  TEENS    2
+1  ONES     2
+2 'cents'   3
+2 'dollars' 4
+4  ONES     3
+4 'ten'     6
+4  TENS     6
+4  TEENS    6
+4  TENS     5
+5  ONES     6
+6 'cents'   7
+
+
+ABRS:
+TENS: 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', eighty, 'ninety'
+ONES: 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'
+TEENS: 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen',
+'seventeen', 'eighteen', 'nineteen'

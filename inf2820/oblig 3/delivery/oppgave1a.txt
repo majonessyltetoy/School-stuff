@@ -1,0 +1,81 @@
+The example trees below look identical. A better way to test if they are indeed
+identical would be: 
+>>> sr_parse(pp, sentence.split()) == sr_parse_modified(pp, sentence.split())
+
+#################################
+Ola og Kari smilte og fortalte barnet at dyret spiste eplet bak huset
+
+sr_parse
+                                      S                                                 
+        ______________________________|_____                                             
+       |                                    VP                                          
+       |                               _____|___________________________________         
+       |                              VP                                        |       
+       |           ___________________|_____                                    |        
+       |          |     |                   VP                                  |       
+       |          |     |      _____________|_________                          |        
+       |          |     |     |       |               CP                        |       
+       |          |     |     |       |      _________|____                     |        
+       |          |     |     |       |     |              S                    |       
+       |          |     |     |       |     |     _________|_____               |        
+       NP         |     |     |       |     |    |               VP             PP      
+   ____|____      |     |     |       |     |    |          _____|____      ____|____    
+  NP   |    NP    VP    |     |       NP    |    NP        |          NP   |         NP 
+  |    |    |     |     |     |       |     |    |         |          |    |         |   
+Nprop  CC Nprop  Vin    CC   VtC     Ndet   C   Ndet       Vt        Ndet PREP      Ndet
+  |    |    |     |     |     |       |     |    |         |          |    |         |   
+ Ola   og  Kari smilte  og fortalte barnet  at dyret     spiste     eplet bak      huset
+
+
+ sr_parse_modified
+                                      S                                                 
+        ______________________________|_____                                             
+       |                                    VP                                          
+       |                               _____|___________________________________         
+       |                              VP                                        |       
+       |           ___________________|_____                                    |        
+       |          |     |                   VP                                  |       
+       |          |     |      _____________|_________                          |        
+       |          |     |     |       |               CP                        |       
+       |          |     |     |       |      _________|____                     |        
+       |          |     |     |       |     |              S                    |       
+       |          |     |     |       |     |     _________|_____               |        
+       NP         |     |     |       |     |    |               VP             PP      
+   ____|____      |     |     |       |     |    |          _____|____      ____|____    
+  NP   |    NP    VP    |     |       NP    |    NP        |          NP   |         NP 
+  |    |    |     |     |     |       |     |    |         |          |    |         |   
+Nprop  CC Nprop  Vin    CC   VtC     Ndet   C   Ndet       Vt        Ndet PREP      Ndet
+  |    |    |     |     |     |       |     |    |         |          |    |         |   
+ Ola   og  Kari smilte  og fortalte barnet  at dyret     spiste     eplet bak      huset
+
+
+
+#################################
+et sterkt barn spiste dyret bak huset
+
+sr_parse
+                  S                                
+       ___________|_______________                  
+      |                           VP               
+      |                  _________|________         
+      |                 VP                 PP      
+      |            _____|____          ____|____    
+      NP          |          NP       |         NP 
+  ____|_____      |          |        |         |   
+Det  ADJ    Nn    Vt        Ndet     PREP      Ndet
+ |    |     |     |          |        |         |   
+ et sterkt barn spiste     dyret     bak      huset
+
+
+sr_parse_modified
+                  S                                
+       ___________|_______________                  
+      |                           VP               
+      |                  _________|________         
+      |                 VP                 PP      
+      |            _____|____          ____|____    
+      NP          |          NP       |         NP 
+  ____|_____      |          |        |         |   
+Det  ADJ    Nn    Vt        Ndet     PREP      Ndet
+ |    |     |     |          |        |         |   
+ et sterkt barn spiste     dyret     bak      huset

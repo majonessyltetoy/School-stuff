@@ -1,0 +1,17 @@
+variabel linje = ""
+åpne fil
+
+så lenge fil har flere linjer, og linje ikke er "-":
+	les inn ny person(linje)
+
+variabel nåværendePerson
+så lenge fil har flere linjer:
+	hvis linje er "-":
+		nåværendePerson = neste linje
+	ellers:
+		hvis linje begynner med "*":
+			legg til dvd(linje fra tegn 1 og ut) i person(nåværendePerson) sitt dvd-arkiv
+			legg til dvd(linje fra tegn 1 og ut) i person(nåværendePerson) sitt utlånte-dvd-arkiv
+			legg til dvd(linje fra tegn 1 og ut) i person(neste linje) sine lånte dvder
+		ellers:
+			legg til dvd(linje) i person(nåværendePerson) sitt dvd-arkiv

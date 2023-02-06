@@ -1,0 +1,44 @@
+Innlevering 9
+navn: Jan Inge Lamo
+dato: 22.10.2015
+
+
+15.10
+
+a) Vi lar relasjon symbolet R tolkes slik at R^M = {<1,1>, <1,2>, <2,1>, <2,2>}
+   Relasjonen er både refleksiv og symmetriks.
+
+b) Vi kan tolke R som mindre eller lik relasjonen slik at formelen blir sann
+   R^M = {<1,1>, <1,2>, <2,2>}
+
+c) Vi kan tolke R som relasjonen som ikke er lik segselv
+   R^M = {<1,2>, <2,1>}
+
+d) Vi kan tolke R som er større eller lik relasjonen.
+   R^M = {<1,1>, <2,1>, <2,2>}
+
+
+16.4
+
+a) Formelen er ikke sann fordi det ikke finnes noen liten trekant
+
+b) Formelen er sann, det finnes en liten firkant
+
+c) Usann, firkant er ikke en logisk konsekvens av liten
+
+d) Sann, sirkel impliserer liten
+
+e) Sann, trekant impliserer stor
+
+f) Usann, fordi det finnes en y slik at x er under y
+
+
+16.7
+
+{<∀x∃yRxy>, <∃y∀xRxy>, <∀x∀yRxy>} er en logisk konsekvens av ∃x∃yRxy
+∀x∀yRxy er en logisk konsekvens av ∃y∀xRxy
+∀x∀yRxy er en logisk konsekvens av ∀x∃yRxy
+∀x∃yRxy er en logisk konsekvens av ∃y∀xRxy og vice versa
+
+
+

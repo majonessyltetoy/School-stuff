@@ -1,0 +1,11 @@
+>>> analyze('kastet')
+morf N,sg   N_n_sg_def
+morf Adj,pos,indef,sg,part  Adj_mfn_pos_indef_sg
+morf V  V_pastpart_indic_passive_main_dummysubj!intrans!trans
+morf V  V_pastpart_indic_active_main_ditrans!intrans!trans
+morf V,pret V_pret_indic_active_main_ditrans!intrans!trans
+
+>>> analyze('øyer')
+morf N,pl,indef N_f_pl_indef
+morf V,pres     V_pres_indic_active_main_trans
+morf N,pl,indef N_n_pl_indef

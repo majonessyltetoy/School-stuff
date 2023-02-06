@@ -1,0 +1,17 @@
+lancaster.stem('splitting') -> 'splitting'
+porter.stem('splitting')    -> 'split'
+
+In my implementation of Lancaster stemming, I get an erroneous stemming:
+lancaster.stem('splitting') -> 'splitting'
+this is strange because Lancaster stemming is often more aggressive than Porter.
+
+Example:
+word: advancing
+port: advanc
+lanc: adv
+
+On http://smile-stemmer.appspot.com/ we get the expected behavior from both
+Porter and Lancaster: 'splitting' -> 'split'.
+
+In this exercise with my results, I have to say Lancaster stemming does not stem
+'splitting' while Porter does.

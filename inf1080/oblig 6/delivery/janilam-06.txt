@@ -1,0 +1,73 @@
+10.7
+
+s: F → N
+Der F er alle utsagnslogiske symboler og N er alle de naturlige tallene
+
+Λ ∈ F
+
+t ∈ F*
+
+x ∈ F
+
+s(Λ) = 0
+s(tx) = 1 + s(x)
+
+
+Vi kan også lage en scheme funksjon som teller symboler
+(define (tell_symboler lst)
+    (if (eq? '() lst)
+        0
+        (+ (string-length (symbol->string (car lst)))
+           tell_symboler (cdr lst))))
+
+Der lst er den utsagnslogiske formelen i en list f.eks. '(\(P → Q\))
+
+Note: Scheme koden over kan tolkes som pseudokode siden jeg ikke har noen Scheme
+      interpreter for øyeblikket.
+
+
+
+
+11.8
+
+Påstanden:
+6^n - 1
+er delelig med 5 for alle n
+
+For basissteget sier vi at n=1
+
+6^1 - 1 = 5
+
+Påstanden holder for n=1
+
+
+Induksjonshypotesen sier at vi kan gjøre en antagelse
+
+Vi antar at påstanden er sann og at det finnes et heltall k som gjør uttrykket 
+delelig med 5:
+
+6^n - 1 = 5*k
+
+Vi gjør om ligningen slik vi trenger den senere
+
+6^n = 5*k + 1
+
+
+For å bevise påstanden med induksjon må den holde for et vilkårlig tall n.
+Det betyr at den må holde for n + 1.
+
+6^(n+1) - 1
+
+Det kan skrives som: (6^n * 6) - 1
+
+(6^n * 6) - 1
+Vi setter verdien vi fant i induksjonshypotesen for 6^n
+((5*k + 1) * 6) - 1
+(6*5*k + 6) - 1
+6*5*k + 5
+5(6k + 1)
+
+Siden (6k + 1) er et heltall vil 5(6k + 1) alltid være delelig med 5.
+
+Dermed har vi bevist med induksjon at 6^n - 1 er delelig med 5
+

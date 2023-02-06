@@ -1,0 +1,18 @@
+Compile:
+javac Robol.java Main.java
+
+Execute:
+java Main
+
+
+I don't know what this documentation is supposed to contain. The Robol 
+interpreter is pretty straight forward, hence the lack of comments in the code.
+The <stop> statement simply tells the robot to print its position on the grid,
+the program would have stopped execution nonetheless. If the program tries to 
+interpret a variable that hasn't been declared or the robot moves off the grid,
+then the program print an error message and exits execution. 
+
+Main.java contain the AST representations of the example programs.
+
+I'm sorry about the poor interface (non-existing) during runtime. This
+assignment took many more hours than necessary due to a side-effect error.

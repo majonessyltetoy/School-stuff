@@ -1,0 +1,19 @@
+command:
+sentence = "Kari likte dyret"+X*" bak huset"
+timing("""cky(sentence.split(),cnf)""")
+
+where 'X' is replaced by the multiplied in the table.
+
+
+
+  multiplied   |   cky
+---------------+------------
+       10      |   0.178   
+---------------+------------
+       20      |   0.644  
+---------------+------------
+       30      |   1.738
+---------------+------------
+       40      |   3.955      
+---------------+------------
+       50      |   7.530  

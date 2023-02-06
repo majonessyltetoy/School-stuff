@@ -1,0 +1,51 @@
+6.3
+
+a) S1 mangler <c,c> for å bli refleksiv
+
+b) S2 mangler <b,a> for å bli symmetrisk
+
+c) S3 mangler elementet <a,c> for å bli transitiv
+
+d) Enten <a,b> eller <b,a> kan fjernes fra S4
+   for at det blir en anti-symmetrisk relasjon
+   
+e) <a,a> må fjernes fra S5 for å bli irrefleksiv
+
+f) refleksiv: S4
+   symmetrisk: S4, S5
+   transitiv: S4
+
+   
+
+7.8
+
+Heretter bruker jeg de faglige uttrykkene injektiv
+og surjektiv for "en-til-en" og "på"
+
+a) f er injektiv siden alle elementene funksjonen
+   får gir hvert sitt svar. Den er ikke surjektiv
+   siden funksjonen ikke dekker hele verdiområdet.
+   
+b) Igjen er f injektiv fordi ingen av verdiene fra
+   verdiområdet dupliseres, men ikke surjektiv siden
+   hele verdiområdet ikke er dekket.
+   
+c) Funksjonen er verken injektiv eller surjektiv.
+   Både c og d returnerer 3, hvis en av dem hadde
+   returnert 4 istendenfor, ville den vært bijektiv.
+   
+d) Denne funksjonen er både injektiv og surjektiv,
+   eller med andre ord; bijektiv. det er fordi alle
+   elementene fra defenisjonmengden gir bare et svar
+   fra verdiområdet og alle elementene fra verdiområdet
+   er blitt et svar.
+   
+e) Funksjonen er bijektiv fordi hvert reele tall man kan
+   sette inn i f(x)=2x+1 kan man få et hvilken som helst
+   reele tall tilbake. Siden funksjonen er linear vet
+   vi at den er injektiv og.
+   
+f) Denne funksjonen er bare injektiv. Alle de naturlige
+   tallene som settes inn i funksjonen gir bare et svar
+   tilbake. Den er ikke bijektiv siden funksjonen ikke
+   kan returner alle naturlige tall (1 og 2).

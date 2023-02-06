@@ -1,0 +1,49 @@
+Innlevering 7
+navn: Jan Inge Lamo
+dato: 08.10.2015
+
+
+
+12.1
+
+Funksjonen f er definert følgende
+
+(1) - f(0) = 1 og f(1) = 0
+(2) - f(b0) = f(b)1 hvor b er en bitstreng
+(3) - f(b1) = f(b)0 hvor b er en bitstreng
+
+
+a) Funksjonen tar imot en bitstreng og returnerer bitstrengen der 0 og 1 har
+   byttet plass.
+   
+
+b) f(100) = 011
+
+
+c) 1:  f(f(b)) = b
+   2:  Induksjon
+   3:  induksjonshypotesen
+   4:  påstanden
+   5:  bx
+   6:  punkt (2)
+   7:  f(f(b)0)
+   8:  punkt (3)
+   9:  induksjon
+   10: f(f(bx)) = bx
+
+
+
+13.1
+
+a) Far(Ola, Kari)
+
+b) ∃xMor(Kari, x)
+
+c) ¬∃xMor(x, Ola)
+
+d) ∀y∃x∃z(Far(x, y) ∧ Mor(z, y))
+
+e) ∀y∃x∃z(Mor(x, y) ∧ Mor(z, x))
+   
+f) ∀y¬∃x(Far(x, y) ∧ Mor(x, y))
+

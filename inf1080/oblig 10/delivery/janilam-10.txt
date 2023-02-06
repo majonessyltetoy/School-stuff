@@ -1,0 +1,35 @@
+Innlevering 10
+navn: Jan Inge Lamo
+dato: 29.10.15
+
+
+17.5
+
+a) Komplementet til mengden {1, 2, 3} er:
+   {1, 2, 3, 4, 5} - {1, 2, 3} = {4, 5}
+   
+b) Potensmengden til {1, 4} er {Ø, {1}, {4}, {1, 4}}
+
+c) Vi lager partisjoner av mengden {a, b, c, d, e, f} med mengden {a, b, c, d}
+   {{a, b, c, d}, {e}, {f}} og {{a, b, c, d}, {e, f}}
+
+d) Vi lager en partisjon av {1, 2, 3, 4} med to elementer {{2, 3}, {1, 4}}
+
+e) Grunnen til at {{1, 2}, {2, 3}} ikke er en partisjon av {1, 2, 3} er at 
+   snittet av {1, 2} og {2, 3} ikke er den tomme mengden; den er {2}.
+
+f) X ∈ 𝒫(X) for alle X er sann fordi potensmengden til X er definert som mengden
+   av alle delmengdene til X og fordi potensmengden inneholder alle delmengdene
+   inneholder den også mengden som er lik X.
+
+
+
+18.10
+
+a) Vi får 127 forskjellige strenger når vi stokker om strengen LOLOLOL
+
+b) Vi får 420 forskjellige strenger. Det løste jeg ved å finne antall
+   kombinasjoner tallet 3 kunne ha i strengen også hvor mange kombinasjoner 
+   2 og 1 kunne ha i de resterende plassene i strengen. Vi trenger ikke ta med 0
+   siden det alltid bare er en ledig plass igjen på slutten.
+   Regnestykket så slik ut: (⁷P₃/3!) * (⁴P₂/2!) * 2
